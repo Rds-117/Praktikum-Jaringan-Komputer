@@ -1,6 +1,8 @@
 Download wireshark
 Langkah:
-1 ![langkah_1](../assets/Screenshot%202026-03-07%20160108.png)
+
+1 
+![langkah_1](../assets/Screenshot%202026-03-07%20160108.png)
 2 ![langkah_2](../assets/Screenshot%202026-03-07%20160115.png)
 3 ![langkah_3](../assets/Screenshot%202026-03-07%20160123.png)
 4 ![langkah_4](../assets/Screenshot%202026-03-07%20160128.png)
