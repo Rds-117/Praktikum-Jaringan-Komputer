@@ -10,5 +10,6 @@ Langkah menggunakan wireshark:
 3.Kemudian kembali ke Wireshark dan ketik **http** pada kolom pencarian (tanpa tanda kutip). Setelah itu, pilih paket yang memiliki keterangan **(text/html)** (tanpa tanda kutip).
 ![langkah_3](../assets/week%202/3.png)
 
-4.Klik **"Line-based text data"** untuk menampilkan:
+4.Klik **"Line-based text data"** untuk menampilkan: 
+
 ![langkah_4](../assets/week%202/4.png)
