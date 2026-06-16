@@ -58,12 +58,6 @@ Pada tahap ini, Target MAC Address masih bernilai kosong karena informasi terseb
 
 Setelah menerima ARP Request, perangkat yang memiliki alamat IP 192.168.68.1 akan mengirimkan ARP Reply secara unicast kepada pengirim. Paket balasan ini berisi informasi alamat MAC yang dimiliki oleh perangkat tersebut.
 
-![](../assets/week%2013/7.png)
+![](../assets/week%2013/6.png)
 
 Setelah ARP Reply diterima, perangkat pengirim akan menyimpan pasangan alamat IP dan alamat MAC ke dalam ARP Cache sehingga komunikasi berikutnya dapat dilakukan tanpa perlu mengirimkan ARP Request kembali. Dengan demikian, fungsi utama ARP adalah membantu perangkat menemukan alamat MAC tujuan berdasarkan alamat IP yang diketahui, sehingga frame Ethernet dapat dikirim ke perangkat yang tepat dalam jaringan lokal.
-
-
-
-
-
-![](../assets/week%2013/7.png)
