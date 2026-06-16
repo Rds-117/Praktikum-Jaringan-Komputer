@@ -43,19 +43,19 @@ Cara kerja ICMP berfokus pada pertukaran pesan kontrol dan informasi status jari
 ## Percobaan
 1. Jalankan wireshark dan pilih interface wifi
 2. Buka cmd, ketikan perintah "ping -n 10 www.ox.ac.uk"
-    ![](../assets/week%2012/1.png)  
+    ![](../assets/Week%2012/1.png)  
 
 3. Lalu pada wireshark, stop capture dan filter "icmp"
-      ![](../assets/week%2012/2.png)
+      ![](../assets/Week%2012/2.png)
 
 4. pilih salah satu paket ICMP echo reply
-     ![](../assets/week%2012/3.png)
+     ![](../assets/Week%2012/3.png)
 Alamat IP 104.20.34.13 berperan sebagai pengirim paket balasan yang ditujukan kepada klien dengan alamat IP 192.168.68.52
 
 Berdasarkan informasi pada panel detail Wireshark, paket tersebut memiliki nilai **Type = 0** dan **Code = 0**, yang menunjukkan bahwa paket tersebut merupakan **ICMP Echo Reply**. Pesan ini menandakan bahwa host tujuan telah berhasil menerima **ICMP Echo Request** yang dikirim sebelumnya dan memberikan respons kembali kepada pengirim. Dengan demikian, dapat disimpulkan bahwa perangkat tujuan dalam keadaan aktif serta dapat dijangkau melalui jaringan.
 
 5. pilih salah satu paket ICMP echo request
-    ![](../assets/week%2012/4.png)
+    ![](../assets/Week%2012/4.png)
 Alamat 192.168.68.52 berperan sebagai pengirim paket balasan yang ditujukan kepada klien dengan alamat IP 104.20.34.13
 
 Pada panel detail di bagian bawah, teridentifikasi bahwa pesan ini memiliki atribut Type: 8 dan Code: 0, yang secara standar protokol didefinisikan sebagai pesan ICMP Echo (ping) Request. Ini berarti komputer klien sedang meminta konfirmasi kehadiran dan konektivitas dari komputer tujuan.
@@ -63,9 +63,9 @@ Pada panel detail di bagian bawah, teridentifikasi bahwa pesan ini memiliki atri
 ## Pesan ICMP yang dihasilkan oleh program Traceroute
 1. Jalankan wireshark dan pilih interface wifi
 2. Buka cmd, ketikan perintah "tracert www.ox.ac.uk"
-    ![](../assets/week%2012/5.png)
+    ![](../assets/Week%2012/5.png)
 3. Lalu pada wireshark, stop capture dan filter "icmp"
-    ![](../assets/week%2012/6.png)
+    ![](../assets/Week%2012/6.png)
 
 Berdasarkan gambar yang ditampilkan, proses pelacakan rute (traceroute) memanfaatkan dua jenis pesan ICMP untuk mengidentifikasi jalur yang dilalui paket data menuju tujuan. Ketika nilai Time To Live (TTL) suatu paket mencapai nol sebelum sampai ke tujuan, router yang menerima paket tersebut akan membuangnya dan mengirimkan pesan ICMP Time Exceeded kepada pengirim. Dengan meningkatkan nilai TTL secara bertahap pada setiap pengiriman, aplikasi traceroute dapat mengetahui dan mencatat setiap router yang dilewati paket di sepanjang jalur komunikasi.
 
