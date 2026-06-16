@@ -14,17 +14,17 @@
 ## Pengecekan IP Address
 
 1. Buka cmd dan ketik ipconfig, lalu enter
-    ![](../assets/week%2010/1.png)
+    ![](../assets/week%20101/1.png)
 
 2. scroll kebawah, cari bagian wifi adapter/wireless/modul wifi.
-    ![](../assets/week%2010/2.png)
+    ![](../assets/week%20101/2.png)
 
 3. gambar di atas beripakan hasil dari ipconfig, dimana itu menampilkan ip address dari device kita
 
 ## Menangkap Paket Dari Eksekusi Traceroute
 
 buka cmd, dan ketik : tracert gaia.cs.umass.edu
-    ![](../assets/week%2010/3.png)
+    ![](../assets/week%20101/3.png)
 hasilnya seperti diatas ini
 
 Jika menggunakan wireshark + cmd :
@@ -33,7 +33,7 @@ Jika menggunakan wireshark + cmd :
 3. buka cmd, dan ketik : tracert gaia.cs.umass.edu
 4. Balik ke wireshark, filtering dengan kata icmp.
 5. hasil :
-  ![](../assets/week%2010/4.png)
+  ![](../assets/week%20101/4.png)
 
 
 ## Fragmentasi 
@@ -43,10 +43,10 @@ contoh :
 1. Buka wireshark
 2. lakukan capturing pada jaringan yang kalian gunakan (contoh wifi adapter)
 3. Buka cmd, dan ketik: ping 8.8.8.8 -l 3000
-![](../assets/week%2010/5.png)
+![](../assets/week%20101/5.png)
 4. Balik kewireshark, filtering menggunakan kata: ip.flags.mf == 1 || ip.frag_offset > 0
 5. hasil :
-    ![](../assets/week%2010/6.png)
+    ![](../assets/week%20101/6.png)
 
 
 ## IPv6
@@ -55,5 +55,5 @@ Berikut langkah untuk melihat protokol jaringan IPV6 di wireshark
 2. lakukan capturing pada jaringan yang kalian gunakan (contoh wifi adapter)
 3. Lakukan Filtering dengan kata: ipv6
 4. Hasil :
-    ![](../assets/week%2010/7.png)
+    ![](../assets/week%20101/7.png)
 
