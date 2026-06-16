@@ -24,8 +24,9 @@ Beacon Frame digunakan untuk mengidentifikasi informasi jaringan yang dipancarka
 
 Selanjutnya digunakan filter wwlan.fc.subtype == 8 && wlan.fc.type == 0 pada Wireshark untuk memfilter dan menampilkan Beacon Frame, yaitu paket yang berfungsi sebagai sinyal pemberitahuan (beacon) dalam jaringan Wi-Fi untuk mengumumkan keberadaan Access Point kepada perangkat di sekitarnya.
 
-    ![](../assets/week%2014/3.png)
-    ![](../assets/week%2014/4.png)
+![](../assets/week%2014/3.png)
+
+![](../assets/week%2014/4.png)
 
 Analisis Data Transfer
 
