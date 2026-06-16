@@ -51,7 +51,7 @@ contoh :
 
 ## IPv6
 Berikut langkah untuk melihat protokol jaringan IPV6 di wireshark
-1. Buka wireshark
+1. Buka wireshark lagi
 2. lakukan capturing pada jaringan yang kalian gunakan (contoh wifi adapter)
 3. Lakukan Filtering dengan kata: ipv6
 4. Hasil :
