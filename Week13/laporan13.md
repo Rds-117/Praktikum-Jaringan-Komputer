@@ -20,6 +20,8 @@ Langkah pertama yang dilakukan adalah membuka Command Prompt (CMD) dengan hak ak
 
 Pada saat pelaksanaan praktikum terjadi kendala sehingga digunakan alternatif perintah `netsh interface ip delete arpcache`, yang memiliki fungsi serupa untuk menghapus seluruh ARP Cache. Setelah proses penghapusan selesai, perintah `arp -a` dijalankan untuk menampilkan isi tabel ARP dan memastikan bahwa cache telah berhasil dibersihkan.
     ![](../assets/week%2013/1.png)
+
+    
 ### 2 Konfigurasi Wireshark
 
 Setelah ARP Cache dibersihkan, langkah berikutnya adalah membuka aplikasi Wireshark dan memilih antarmuka jaringan yang sedang digunakan untuk terhubung ke internet. Selanjutnya masuk ke menu **Analyze → Enabled Protocols**, kemudian menonaktifkan protokol IPv4 dengan menghilangkan tanda centang pada opsi tersebut. Pengaturan ini dilakukan agar proses pengamatan paket ARP menjadi lebih mudah karena lalu lintas IPv4 tidak ditampilkan.
@@ -53,6 +55,12 @@ Pada tahap ini, Target MAC Address masih bernilai kosong karena informasi terseb
 
 Setelah menerima ARP Request, perangkat yang memiliki alamat IP 192.168.68.1 akan mengirimkan ARP Reply secara unicast kepada pengirim. Paket balasan ini berisi informasi alamat MAC yang dimiliki oleh perangkat tersebut.
 
+    ![](../assets/week%2013/6.png)
+
 Setelah ARP Reply diterima, perangkat pengirim akan menyimpan pasangan alamat IP dan alamat MAC ke dalam ARP Cache sehingga komunikasi berikutnya dapat dilakukan tanpa perlu mengirimkan ARP Request kembali. Dengan demikian, fungsi utama ARP adalah membantu perangkat menemukan alamat MAC tujuan berdasarkan alamat IP yang diketahui, sehingga frame Ethernet dapat dikirim ke perangkat yang tepat dalam jaringan lokal.
 
-    ![](../assets/week%2013/6.png)
+
+
+
+
+[![](../assets/week%2013/1.png)]: ../assets/week%2013/1.png
