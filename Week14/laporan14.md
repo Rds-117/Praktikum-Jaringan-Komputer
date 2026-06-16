@@ -16,20 +16,19 @@ Praktikum dilakukan menggunakan file **Wireshark_802_11.pcap** yang disediakan p
 
 ![](../assets/week%2014/1.png)
 
-### Analisis Beacon Frame
-  
-    
+## Analisis Beacon Frame
 ![](../assets/week%2014/2.png)
 
 Beacon Frame digunakan untuk mengidentifikasi informasi jaringan yang dipancarkan oleh Access Point. Dari hasil analisis diperoleh bahwa jaringan menggunakan standar **802.11b** dengan kecepatan **1 Mb/s**, beroperasi pada **Channel 6 (2437 MHz)**, serta memiliki kekuatan sinyal **-29 dBm** dan nilai **SNR 71 dB** yang menunjukkan kualitas sinyal yang sangat baik.
 
-Selanjutnya digunakan filter wwlan.fc.subtype == 8 && wlan.fc.type == 0 pada Wireshark untuk memfilter dan menampilkan Beacon Frame, yaitu paket yang berfungsi sebagai sinyal pemberitahuan (beacon) dalam jaringan Wi-Fi untuk mengumumkan keberadaan Access Point kepada perangkat di sekitarnya.
 
+
+Selanjutnya digunakan filter wwlan.fc.subtype == 8 && wlan.fc.type == 0 pada Wireshark untuk memfilter dan menampilkan Beacon Frame, yaitu paket yang berfungsi sebagai sinyal pemberitahuan (beacon) dalam jaringan Wi-Fi untuk mengumumkan keberadaan Access Point kepada perangkat di sekitarnya.
 
 ![](../assets/week%2014/3.png)
 
-![](../assets/week%2014/4.png)
 
+![](../assets/week%2014/4.png)
 Analisis Data Transfer
 
 Untuk mengamati proses transfer data digunakan filter: ip.addr == 128.119.245.12
